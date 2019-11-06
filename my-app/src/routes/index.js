@@ -1,5 +1,5 @@
 import CoreLayout from '../layouts/CoreLayout/CoreLayout'
-import SearchRoute from '/Search/Search.js'
+import SearchRoute from './src/component/Search/Search.js'
 
 export const createRoutes = (store) => ({
     path: '/',

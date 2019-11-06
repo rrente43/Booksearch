@@ -4,6 +4,9 @@ import classNames from 'classNames'
 
 export const Search = (props) => {
     const { getBooks, books,query} = props
+    const mappedBooks =!books.isEmpty() ? books.map((book, index) => {
+
+    }): <h4>No Results found</h4>
     return(
 
         <div className={classes.wrapper}>
@@ -19,8 +22,12 @@ export const Search = (props) => {
                     </div>
                     <div className ='col-md-8'>
                         <div className= "form-group">
-                            <input type = 'text' className= 'form-control' id= 'search' placeholder= 'Search for a Book' />
+                            <input type = 'text' className= 'form-control' id= 'search' placeholder= 'Search for a Book' 
+                            onChange = {({target}) => console.log(target.value)}/>
                         </div>
+                    </div>
+                    <div>
+                        Books Go Here
                     </div>
                     </div>
                 </section>
